@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Music Usage Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🎧 MusicTracker</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="platforms.html">Platforms</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container dashboard">
+    <h1>Usage Dashboard</h1>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="stat-card">
+        <h2>👥</h2>
+        <p>Total Users</p>
+        <span>2,450</span>
+      </div>
+      <div class="stat-card">
+        <h2>⏱️</h2>
+        <p>Total Hours Streamed</p>
+        <span>12,780</span>
+      </div>
+      <div class="stat-card">
+        <h2>🔥</h2>
+        <p>Top Platform</p>
+        <span>Spotify</span>
+      </div>
+    </section>
+
+    <!-- Chart Section -->
+    <section class="chart-section">
+      <h2>Hours Listened Per Platform</h2>
+      <canvas id="usageChart"></canvas>
+    </section>
+
+    <!-- Recent Activity -->
+    <section class="recent-activity">
+      <h2>Recent Activity</h2>
+      <ul>
+        <li>John listened to Spotify for 3 hours 🎧</li>
+        <li>Mary explored Apple Music playlists 🍎</li>
+        <li>Alex discovered new tracks on YouTube Music ▶️</li>
+        <li>Susan streamed 4 hours on Deezer 🎶</li>
+        <li>Manu downloaded 10 songs on Boomplay ▶️</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 MusicTracker | Designed By Emma.Dev</p>
+  </footer>
+  
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
